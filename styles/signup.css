@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --dark-green: #264B37;
+    --yellow: #E1E68B;
+    --background: #EDEDED;
+    --dark-text: #000000;
+    --light-text: #FFFFFF;
+
+    /* Rounded Corners */
+    --rounded-small: 5px;
+
+    /* Font Sizes */
+    --large: 32px;
+    --medium: 24px;
+    --small: 16px;
+}
