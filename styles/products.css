@@ -13,4 +13,9 @@
     --large: 32px;
     --medium: 24px;
     --small: 16px;
+
+    /* Gap Sizes */
+    --small-gap: 1rem;
+    --medium-gap: 2rem;
+    --large-gap: 3rem;
 }

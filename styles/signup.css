@@ -13,4 +13,54 @@
     --large: 32px;
     --medium: 24px;
     --small: 16px;
+
+    /* Gap Sizes */
+    --small-gap: 1rem;
+    --medium-gap: 2rem;
+    --large-gap: 3rem;
+}
+
+main {
+    background-color: white;
+    width: 50vw;
+    margin: var(--small-gap) auto;
+    padding: var(--medium-gap);
+    border-radius: var(--rounded-small);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--large-gap);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.input, select {
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: var(--rounded-small);
+}
+
+.btn {
+    padding: var(--small-gap);
+    background-color: #C66D43;
+    color: var(--light-text);
+    font-size: var(--small);
+    border: none;
+    border-radius: var(--rounded-small);
+}
+
+.btn:hover {
+    cursor: pointer;
 }
