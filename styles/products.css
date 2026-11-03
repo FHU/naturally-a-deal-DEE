@@ -19,9 +19,23 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+h2 {
+    font-size: 18px;
+}
 
-.product {
+
+.items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: 2px solid grey;
+    padding: 30px;
+    gap: 1.5rem;
+
+}
+.products{
+       min-height: 75px;
+    max-width: 25%;
+    padding: 24px;
+
 }
