@@ -19,6 +19,13 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+main {
+       background-color: white;
+    width: 80%;
+    margin: 60px;
+    padding: var(--medium-gap);
+    border-radius: var(--rounded-small);
+}
 nav{
     display: flex;
     flex-direction: row;
