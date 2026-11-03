@@ -19,3 +19,9 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
