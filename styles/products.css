@@ -19,6 +19,11 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+ button {
+    background-color: var(--dark-green);
+    color: var(--light-text);
+    padding: 5px;
+ }
 .search { 
     border: 1pxx solid gray;
     padding: 15px;
@@ -35,14 +40,15 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid grey;
+   
     padding:  40px;
     gap: 2rem;
     justify-content: space-between;
-    
+
 
 }
 .products{
+     border: 2px solid grey;
        min-height: 75px;
     max-width: 25%;
     padding: 24px;
