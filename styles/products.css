@@ -19,10 +19,21 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
  button {
     background-color: var(--dark-green);
     color: var(--light-text);
     padding: 5px;
+    border: none;
+ }
+ .price {
+    display: flex;
+    background-color: #FFFFFF;
  }
 .search { 
     border: 1pxx solid gray;
