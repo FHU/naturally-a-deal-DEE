@@ -1,10 +1,20 @@
 :root {
     /* Colors */
-    --dark-green: #264B37;
-    --yellow: #E1E68B;
-    --background: #EDEDED;
-    --dark-text: #000000;
-    --light-text: #FFFFFF;
+    --palette-forest:     #284a39;  /* brand "primary" */
+    --palette-deep-green: #112d1f;  /* brand "secondary" */
+    --palette-butter:     #e1e68b;  /* brand "accent" */
+    --palette-gray:       #ededed;  /* background color */
+    --palette-cream:      #fdffe2;  /* cream page background */
+    --palette-olive:      #a7ab5c;  /* decorative only — see ⚑ FIX in nav */
+    --palette-ink:        #0b0c07;  /* olive-biased near-black */
+    --palette-ink-soft:   #1c2022;  /* reviewer names */
+    --palette-white:      #ffffff;  /* review cards only */
+
+    /* Logo Colors */
+    --palette-logo-green:  #11763c;
+    --palette-logo-yellow: #fcc811;
+    --palette-logo-orange: #f0a153;
+    --palette-logo-brown:  #603814;
 
     /* Rounded Corners */
     --rounded-small: 5px;
@@ -29,11 +39,11 @@
 
 
 body {
-    background-color: var(--background);
+    background-color: var(--palette-gray);
 }
 
 header {
-    background-color: var(--dark-green);
+    background-color: var(--palette-forest);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,19 +51,19 @@ header {
 }
 
 .logo {
-    color: var(--yellow);
+    color: var(--palette-butter);
     font-size: var(--large); 
     font-weight: 700;
 }
 
 header a {
     text-decoration: none;
-    color: var(--light-text);
+    color: var(--palette-white);
     font-size: var(--small);
 }
 
 footer {
-    background-color: var(--dark-green);
-    color: var(--light-text);
+    background-color: var(--palette-forest);
+    color: var(--palette-white);
     padding: var(--small-gap);
 }
