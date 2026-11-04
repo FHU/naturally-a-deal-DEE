@@ -1,14 +1,15 @@
 :root {
     /* Colors */
-    --palette-forest:     #284a39;  /* brand "primary" */
-    --palette-deep-green: #112d1f;  /* brand "secondary" */
-    --palette-butter:     #e1e68b;  /* brand "accent" */
-    --palette-gray:       #ededed;  /* background color */
-    --palette-cream:      #fdffe2;  /* cream page background */
-    --palette-olive:      #a7ab5c;  /* decorative only — see ⚑ FIX in nav */
-    --palette-ink:        #0b0c07;  /* olive-biased near-black */
-    --palette-ink-soft:   #1c2022;  /* reviewer names */
-    --palette-white:      #ffffff;  /* review cards only */
+    --palette-forest:     #284a39;
+    --palette-deep-green: #112d1f;
+    --palette-butter:     #e1e68b;
+    --palette-gray:       #ededed;
+    --palette-cream:      #fdffe2;
+    --palette-olive:      #a7ab5c;
+    --palette-ink:        #0b0c07;
+    --palette-ink-soft:   #1c2022;
+    --palette-white:      #ffffff;
+    --palette-black:      #000000;
 
     /* Logo Colors */
     --palette-logo-green:  #11763c;
