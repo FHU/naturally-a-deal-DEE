@@ -39,6 +39,11 @@ main {
     border-radius: var(--rounded-small);
 }
 
+.current-page {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -74,4 +79,13 @@ section {
 
 .btn:hover {
     cursor: pointer;
+    background-color: var(--palette-forest);
+    transition: 250ms;
+}
+
+@media (max-width: 900px) {
+    main {
+        margin: 0;
+        width: 100%;
+    }
 }
