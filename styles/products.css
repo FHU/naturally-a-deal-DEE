@@ -30,56 +30,109 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
 main {
-       background-color: white;
-    width: 80%;
-    margin: 60px;
+       /* background-color: white; */
+    width: 100%;
+    margin: auto;
     padding: var(--medium-gap);
     border-radius: var(--rounded-small);
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-}
- button {
-    background-color: var(--dark-green);
-    color: var(--light-text);
-    padding: 5px;
-    border: none;
- }
- .price {
+
+
+ .cart-total {
     display: flex;
     background-color: #FFFFFF;
  }
-.search { 
-    border: 1pxx solid gray;
-    padding: 15px;
-    margin: 0;
-    color: lightgrey;
 
-}
 h2 {
-    font-size: 18px;
+    font-size: var(--medium);
 }
 
 
 .items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    width: 100%;
    
-    padding:  40px;
-    gap: 2rem;
-    justify-content: space-between;
-
+    padding:  10px;
+    gap: 1rem;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /* scrollbar-width: ; */
+    overscroll-behavior-x: contain;
 
 }
-.products{
-     border: 2px solid grey;
-       min-height: 75px;
-    max-width: 25%;
+.product{
+    scroll-snap-align: start;
+    display: flex;
+    background-color: white;
+    border: 2px solid grey;
+    min-height: auto;
+    gap: var(--medium-gap);
     padding: 24px;
+    width: 100%;
 
+}
+
+.price {
+    font-size: var(--large);
+    font-weight: bold;
+}
+
+.date{
+    font-size: var(--medium);
+}
+
+.unit{
+    font-size: var(--medium);
+}
+
+.cart-button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #284a39;
+    color: white;
+    border: none;
+    margin-top: auto;
+    font-size: var(--medium);
+}
+
+.img-container {
+    width: 50%;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    gap: 1rem;
+}
+
+/* .product p{
+    font-size: var(--small);
+} */
+
+span {
+    font-size: 50%;
+    font-weight: normal;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--palette-forest);
+    transition: 250ms;
+    
 }
