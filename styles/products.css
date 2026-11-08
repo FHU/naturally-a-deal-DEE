@@ -24,8 +24,10 @@
     --large: 32px;
     --medium: 24px;
     --small: 16px;
+    --xsmall: 8px;
 
     /* Gap Sizes */
+    --xsmall-gap: 6px;
     --small-gap: 1rem;
     --medium-gap: 2rem;
     --large-gap: 3rem;
@@ -45,11 +47,10 @@ main {
     border-radius: var(--rounded-small);
 }
 
-
- .cart-total {
+.cart-total {
     display: flex;
     background-color: #FFFFFF;
- }
+}
 
 h2 {
     font-size: var(--medium);
