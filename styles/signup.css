@@ -19,6 +19,7 @@
 
     /* Rounded Corners */
     --rounded-small: 5px;
+    --rounded-large: 1rem;
 
     /* Font Sizes */
     --large: 32px;

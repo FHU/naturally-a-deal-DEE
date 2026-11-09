@@ -19,6 +19,7 @@
 
     /* Rounded Corners */
     --rounded-small: 5px;
+    --rounded-large: 1rem;
 
     /* Font Sizes */
     --large: 32px;
@@ -45,6 +46,13 @@ main {
     margin: auto;
     padding: var(--medium-gap);
     border-radius: var(--rounded-small);
+}
+
+.search {
+    background-color: var(--palette-white);
+    padding: var(--xsmall-gap) var(--large-gap) var(--xsmall-gap) var(--small-gap);
+    margin-right: var(--large-gap);
+    border-radius: var(--rounded-large);
 }
 
 .cart-total {
