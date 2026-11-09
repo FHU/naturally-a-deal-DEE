@@ -56,6 +56,9 @@ h2 {
     font-size: var(--medium);
 }
 
+p{
+color: #000000;
+}
 
 .items {
     display: grid;
