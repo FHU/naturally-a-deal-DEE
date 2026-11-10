@@ -6,6 +6,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
 </head>
 
 
@@ -30,64 +31,75 @@
     <main>
         <div class="left">
             <div class="labels">
-                <h1>Description</h1>
-                <h1>Number of Units</h1>
-                <h1>Weight Per Unit</h1>
-                <h1>Total</h1>
+                <h2>Description</h2>
+                <h2>Number of Units</h2>
+                <h2>Weight Per Unit</h2>
+                <h2>Total</h2>
             </div>
-            <div class="itemRow">
-                <a href="#">Organic Cane Sugar</a>
-                <p>2</p>
-                <p>2 Lb</p>
-                <p>$15.75</p>
-                <!--TRASHCAN ICON-->
-            </div>
-            <div class="itemRow">
-                <a href="#">Organic Cane Sugar</a>
-                <p>2</p>
-                <p>2 Lb</p>
-                <p>$15.75</p>
-                <!--TRASHCAN ICON-->
-            </div>
-            <div class="itemRow">
-                <a href="#">Organic Cane Sugar</a>
-                <p>2</p>
-                <p>2 Lb</p>
-                <p>$15.75</p>
-                <!--TRASHCAN ICON-->
-            </div>
-            <div class="itemRow">
-                <a href="#">Organic Cane Sugar</a>
-                <p>2</p>
-                <p>2 Lb</p>
-                <p>$15.75</p>
-                <!--TRASHCAN ICON-->
-            </div>
-            <div class="itemRow">
-                <a href="#">Organic Cane Sugar</a>
-                <p>2</p>
-                <p>2 Lb</p>
-                <p>$15.75</p>
-                <!--TRASHCAN ICON-->
+            <div class="receipt">
+                <div class="itemRow">
+                    <a href="/products.html">Organic Cane Sugar</a>
+                    <p>2</p>
+                    <p>2 Lb</p>
+                    <p>$15.75</p>
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+                <div class="itemRow">
+                    <a href="/products.html">Organic Rolled Oats</a>
+                    <p>2</p>
+                    <p>2 Lb</p>
+                    <p>$15.75</p>
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+                <div class="itemRow">
+                    <a href="/products.html">Lunchables</a>
+                    <p>2</p>
+                    <p>2 Lb</p>
+                    <p>$15.75</p>
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+                <div class="itemRow">
+                    <a href="/products.html">Mixed Nuts</a>
+                    <p>2</p>
+                    <p>2 Lb</p>
+                    <p>$15.75</p>
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
+                <div class="itemRow">
+                    <a href="/products.html">Book</a>
+                    <p>2</p>
+                    <p>2 Lb</p>
+                    <p>$15.75</p>
+                    <span class="material-symbols-outlined">delete</span>
+                </div>
             </div>
         </div>
 
         <div class="right">
-            <h1>Order Summary</h1>
+            <section class="orderSummary">
+                <h2>Order Summary</h2>
 
-            <div class="summary">
-                <h2>Subtotal</h2>
-                <h2>$20</h2>
-                <h2>Tax</h2>
-                <h2>$3.56</h2>
-                <h1>Total</h1>
-                <h1>$23.56</h1>
-            </div>
+                <div class="summary">
+                    <div class="sumRow">
+                        <h3>Subtotal</h3>
+                        <h3>$20</h3>
+                    </div>
+                    <div class="sumRow">
+                        <h3>Tax</h3>
+                        <h3>$3.56</h3>
+                    </div>
+                    <div class="sumRow">
+                        <h1>Total</h1>
+                        <h1>$23.56</h1>
+                    </div>
+                </div>
+            </section>
 
-            <button class="confirmOrderButton">Confirm Order</button>
+            <button class="confirmOrderButton">
+                <a href="/payment.html">Confirm Order</a>
+            </button>
         </div>
     </main>
-
 
     <footer>
         <p>
@@ -96,3 +108,9 @@
     </footer>
 </body>
 </html>
+
+//TODO
+//Change font sizes
+//Reorganize html to create individual rows for products
+//Stick order summary box so that it doesn't scroll
+//Link to all pages
