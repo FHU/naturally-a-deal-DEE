@@ -31,3 +31,25 @@
     --medium-gap: 2rem;
     --large-gap: 3rem;
 }
+
+main {
+    width: 100%;
+    display: grid;
+    display: flex;
+    padding: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    border: 2px solid black;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.right {
+    border: 2px solid black;
+}
