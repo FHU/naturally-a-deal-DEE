@@ -1,0 +1,128 @@
+ :root {
+    /* Colors */
+    --palette-forest:     #284a39;
+    --palette-forest-light: #3d6b55;
+    --palette-deep-green: #112d1f;
+    --palette-butter:     #e1e68b;
+    --palette-gray:       #ededed;
+    --palette-cream:      #fdffe2;
+    --palette-olive:      #a7ab5c;
+    --palette-ink:        #0b0c07;
+    --palette-ink-soft:   #1c2022;
+    --palette-white:      #ffffff;
+    --palette-black:      #000000;
+
+    /* Logo Colors */
+    --palette-logo-green:  #11763c;
+    --palette-logo-yellow: #fcc811;
+    --palette-logo-orange: #f0a153;
+    --palette-logo-brown:  #603814;
+
+    /* Rounded Corners */
+    --rounded-small: 5px;
+    --rounded-large: 1rem;
+
+    /* Font Sizes */
+    --large: 32px;
+    --medium: 24px;
+    --small: 16px;
+
+    /* Gap Sizes */
+    --small-gap: 1rem;
+    --medium-gap: 2rem;
+    --large-gap: 3rem;
+}
+
+main {
+    width: 75vw;
+    margin: var(--medium-gap) auto;
+    background-color: var(--palette-white);
+    padding: var(--medium-gap);
+    border-radius: var(--rounded-small);
+    
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: var(--medium-gap);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: var(--medium-gap);
+    gap: var(--medium-gap);
+}
+
+main a {
+    color: inherit; 
+}
+
+.link {
+    display: flex;
+    gap: var(--small-gap);
+}
+
+.agree label {
+    font-weight: bold;
+}
+
+.agree {
+    margin: var(--medium-gap);
+    margin-top: var(--large-gap);
+}
+
+.buttons {
+    padding: var(--medium-gap);
+    margin-top: var(--small-gap);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continueButton {
+    padding: var(--small-gap);
+    background-color: var(--palette-forest);
+    color: var(--palette-white);
+    font-size: var(--small);
+    border: none;
+    border-radius: var(--rounded-small);
+    width: 30%;
+    margin-top: var(--medium-gap);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.continueButton:hover {
+    background-color: var(--palette-forest-light);
+}
+
+.backToCartButton {
+    padding: var(--small-gap);
+    border: 2px solid var(--palette-forest);
+    background-color: var(--palette-white);
+    color: var(--palette-forest);
+    font-size: var(--small);
+    border-radius: var(--rounded-small);
+    width: 17%;
+    margin-top: var(--medium-gap);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.backToCartButton:hover {
+    border: 2px solid var(--palette-forest-light);
+}
