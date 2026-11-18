@@ -131,7 +131,7 @@ function displayProducts(groups) {
                 `$${Number(product.price).toFixed(2)}`;
             productClone.querySelector(".unit").textContent = product.package_size;
             productClone.querySelector(".date").textContent =
-                product.best_by_date || product.date_label || "-";
+                product.date_label || product.best_by_date || "-";
 
             productClone.querySelector(".cart-button").dataset.productId =
                 product.product_id;
