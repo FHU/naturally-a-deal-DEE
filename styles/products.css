@@ -48,6 +48,11 @@ main {
     border-radius: var(--rounded-small);
 }
 
+img {
+    max-width: 100%;
+
+}
+
 .search {
     background-color: var(--palette-white);
     padding: var(--xsmall-gap) var(--large-gap) var(--xsmall-gap) var(--small-gap);
@@ -93,7 +98,7 @@ color: #000000;
     gap: var(--medium-gap);
     padding: 24px;
     width: 100%;
-
+    max-height: 40vh;
 }
 
 .price {
@@ -121,9 +126,12 @@ color: #000000;
 }
 
 .img-container {
-    width: 50%;
-
+    width: 35%;
+    display: flex;
+    align-items: center;
+    /* max-height:; */
 }
+
 
 .text-container {
     display: flex;
