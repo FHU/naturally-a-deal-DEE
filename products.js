@@ -85,7 +85,6 @@ function displayProducts(groups) {
 
     container.innerHTML = "";
 
-    // Sort categories, keeping Featured Products first and Other last
     const categories = Object.keys(groups).sort((a, b) => {
         if (a === "Featured Products") return -1;
         if (b === "Featured Products") return 1;
@@ -103,7 +102,26 @@ function displayProducts(groups) {
 
         const itemsContainer = categoryClone.querySelector(".items");
 
-        groups[category].forEach(product => {
+        // Arrow button functionality
+        const leftButton = categoryClone.querySelector(".scroll-left");
+        const rightButton = categoryClone.querySelector(".scroll-right");
+
+        leftButton.addEventListener("click", () => {
+            itemsContainer.scrollBy({
+                left: -itemsContainer.clientWidth * 0.8,
+                behavior: "smooth"
+            });
+        });
+
+        rightButton.addEventListener("click", () => {
+            itemsContainer.scrollBy({
+                left: itemsContainer.clientWidth * 0.8,
+                behavior: "smooth"
+            });
+        });
+
+        // Display only 20 products per category
+        groups[category].slice(0, 20).forEach(product => {
             const productClone = productTemplate.content.cloneNode(true);
 
             productClone.querySelector(".product-image").src = product.image_url;
@@ -124,7 +142,6 @@ function displayProducts(groups) {
         container.appendChild(categoryClone);
     });
 }
-
 
 // Load products when page opens
 loadProducts();
