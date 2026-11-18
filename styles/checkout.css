@@ -105,7 +105,7 @@ body {
 
 /* Button */
 
-.confirmOrderButton {
+.checkoutButton {
     padding: var(--small-gap);
     background-color: var(--palette-forest);
     color: var(--palette-white);
@@ -121,6 +121,6 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.confirmOrderButton:hover {
+.checkoutButton:hover {
     background-color: var(--palette-forest-light);
 }
