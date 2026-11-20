@@ -21,7 +21,7 @@
 
     <main>
         <form>
-            <section class="personal-section">
+            <section class="personal-section form-step">
                 <h2>Personal Information</h2>
 
                 <fieldset class="field">
@@ -37,15 +37,18 @@
                 <fieldset class="field">
                     <label for="phone" class="field-label">Phone *</label>
                     <input type="tel" id="phone" class="input" placeholder="(731) 555-0000" required>
+                    <p class="info">Your phone number will only be used to contact you about time-sensitive issues with your order.</p>
                 </fieldset>
 
                 <fieldset class="field">
                     <label for="password" class="field-label">Password *</label>
                     <input type="password" id="password" class="input" required>
+                    <p class="info">Password must be at least 6 characters long.</p>
                 </fieldset>
+                
             </section>
 
-            <section class="coop-section">
+            <section class="coop-section form-step hidden">
                 <h2>Co-Op Group</h2>
 
                 <fieldset class="field">
@@ -59,10 +62,12 @@
                         <option value="temp3">Temporary Option 3</option>
                         <option value="temp4">Temporary Option 4</option>
                     </select>
+
+                    <p class="info">Your co-op group determines the shipping area for your order. Choose the group that serves your area to ensure your order is delivered to a location near you.</p>
                 </fieldset>
             </section>
 
-            <section class="mailing-section">
+            <section class="mailing-section form-step hidden">
                 <h2>Mailing Address</h2>
                 
                 <fieldset class="field">
@@ -90,15 +95,26 @@
                     <input type="text" id="zip" class="input" required>
                 </fieldset>
             </section>
+
+            <div class="form-navigation">
+                <button type="button" id="prev-btn" class="nav-btn">
+                    &#10094; Prev
+                </button>
+
+                <button type="submit" id="submit-btn" class="btn hidden">
+                    Sign Up
+                </button>
+
+                <button type="button" id="next-btn" class="nav-btn">
+                    Next &#10095;
+                </button>
+            </div>
+
             
-            <button class="btn" type="submit" onclick="document.location='products.html'">Sign Up</button>
+
         </form>
     </main>
 
-     <footer>
-        <p>
-            &copy; 2026 - Naturally a Deal
-        </p>
-    </footer>
+    <script src="signup.js"></script>
 </body>
 </html>
